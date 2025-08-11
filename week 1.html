@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The viewport meta tag is essential for responsive design, a key SEO factor. It tells the browser to set the width of the page to the device's width. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title tag is one of the most important on-page SEO elements. It should be unique and descriptive. -->
+    <title>Semantic HTML5: A Web Accessibility & SEO Primer</title>
+    <!-- The description meta tag provides a summary of the page's content, which search engines often use in their search results. -->
+    <meta name="description" content="An example web page demonstrating the use of semantic HTML5, accessibility best practices, and foundational SEO techniques for a well-structured document.">
+</head>
+<body>
+    <!-- The <header> element represents a container for introductory content or a set of navigational links. It's a key ARIA landmark. -->
+    <header>
+        <!-- The <h1> tag is the most important heading. Every page should have one, and it should describe the main topic of the page. -->
+        <h1>Understanding Semantic HTML</h1>
+        <!-- The <nav> element represents a section of a page that contains navigation links. It is a key ARIA landmark. -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about-semantics">What are Semantics?</a></li>
+                <li><a href="#accessibility">Why is Accessibility Important?</a></li>
+                <li><a href="#seo-fundamentals">SEO Fundamentals</a></li>
+                <li><a href="#conclusion">Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- The <main> element is a key ARIA landmark that represents the dominant content of the <body>. There should only be one <main> element per page. -->
+    <main>
+        <!-- The <section> element is a generic standalone section of a document. It is useful for grouping related content and often has a heading. -->
+        <section id="about-semantics" aria-labelledby="about-semantics-heading">
+            <h2 id="about-semantics-heading">What are Semantic Elements?</h2>
+            <p>Semantic HTML tags describe the meaning and purpose of the content they contain. Instead of using a generic <code>&lt;div&gt;</code>, we use tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. This clarity helps both search engines and assistive technologies, like screen readers, to better understand the structure and hierarchy of the page.</p>
+        </section>
+
+        <!-- The <article> element is a self-contained composition in a document, page, application, or site that is intended to be independently distributable or reusable. -->
+        <article id="accessibility" aria-labelledby="accessibility-heading">
+            <h2 id="accessibility-heading">Prioritizing Web Accessibility</h2>
+            <p>Accessibility is about creating a web that is usable by everyone, regardless of ability. By using semantic HTML correctly, we provide a robust structure that screen readers can interpret, allowing users to navigate and understand the content effectively. This includes providing clear heading hierarchies and using attributes like <code>aria-label</code> to offer additional context to assistive technologies.</p>
+            <section aria-labelledby="heading-attributes">
+                <h3 id="heading-attributes">The Importance of Headings and Attributes</h3>
+                <p>A logical heading structure (H1, H2, H3, etc.) acts like an outline for a screen reader, enabling users to quickly jump between sections. Additionally, ARIA attributes can provide extra information to improve the user experience for those with disabilities.</p>
+            </section>
+        </article>
+
+        <section id="seo-fundamentals" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">Foundations of On-Page SEO</h2>
+            <p>Search Engine Optimization (SEO) is the practice of increasing the quantity and quality of traffic to your website through organic search engine results. Proper on-page SEO starts with a well-structured HTML document. By using semantic tags, descriptive titles, and a logical heading hierarchy, you make your content more understandable to search engine crawlers, which can lead to higher rankings and better visibility.</p>
+        </section>
+    </main>
+
+    <!-- The <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author, copyright data, or related documents. -->
+    <footer>
+        <p>&copy; 2025 Web Fundamentals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
